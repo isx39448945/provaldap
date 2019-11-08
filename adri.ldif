@@ -1,0 +1,41 @@
+dn: dc=adri,dc=cat
+dc: adri
+description: Prova ldap M06-ASIX 2019-2020
+objectClass: dcObject
+objectClass: organization
+o: adri.cat
+
+dn: ou=socis,dc=adri,dc=cat
+ou: socis
+description: Container per a socis
+objectclass: organizationalunit
+
+dn: idcat=1,ou=socis,dc=adri,dc=cat
+objectclass: indepeOrgPerson
+objectclass: inetOrgPerson
+cn: Pau Pou
+sn: Pou
+idcat: 1
+sardanes: TRUE
+foto: ///opt/docker/myphoto.jpg
+twitter: @paupou
+userPassword: {SSHA}NDkipesNQqTFDgGJfyraLz/csZAIlk2/
+
+dn: idcat=2,ou=socis,dc=adri,dc=cat
+objectclass: indepeOrgPerson
+objectclass: inetOrgPerson
+cn: Marta Mas
+sn: Mas
+idcat: 2
+sardanes: FALSE
+foto: ///opt/docker/myphoto.jpg
+userPassword: {SSHA}ghmtRL11YtXoUhIP7z6f7nb8RCNadFe+
+
+dn: idcat=3,ou=socis,dc=adri,dc=cat
+objectclass: indepeOrgPerson
+objectclass: inetOrgPerson
+cn: Anna Pou
+sn: Pou
+idcat: 3
+twitter: @annapou
+userPassword: {SSHA}Bm4B3Bu/fuH6Bby9lgxfFAwLYrK0RbOq

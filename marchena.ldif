@@ -1,0 +1,24 @@
+dn: idcat=3,ou=socis,dc=adri,dc=cat
+changetype: modify
+add: objectClass
+objectClass: marchenaAccount
+-
+add: delictes
+delictes: difamació i adoctrinament
+-
+add: galeres
+galeres: FALSE
+
+dn: idcat=2,ou=socis,dc=adri,dc=cat
+changetype: modify
+add: objectClass
+objectClass: marchenaAccount
+-
+add: delictes
+delictes: sedició i malversació, saltar-se la CONSTITUCION ESPANYOLA i no estimar ESPANYA
+-
+add: anysComdemna
+anysComdemna: 13
+-
+add: galeres
+galeres: TRUE

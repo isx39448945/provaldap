@@ -1,0 +1,11 @@
+# Prova ldapserver 2019-2020
+FROM fedora:27
+LABEL version="1.0"
+LABEL author="isx39448945"
+LABEL subject="provaldap2019"
+RUN dnf -y install openldap-servers openldap-clients
+RUN mkdir /opt/docker
+COPY * /opt/docker/
+RUN chmod +x /opt/docker/startup.sh
+WORKDIR /opt/docker
+CMD /opt/docker/startup.sh
